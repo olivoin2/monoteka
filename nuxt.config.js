@@ -1,4 +1,8 @@
 module.exports = {
+  mode: 'spa',
+  router: {
+    base: '/monoteka/'
+  },
   /*
   ** Headers of the page
   */
@@ -21,6 +25,7 @@ module.exports = {
   /*
   ** Build configuration
   */
+
   build: {
     /*
     ** Run ESLint on save
@@ -36,5 +41,8 @@ module.exports = {
       }
     }
   }
+
+
+
 }
 
