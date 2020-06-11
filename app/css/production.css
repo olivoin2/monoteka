@@ -742,7 +742,7 @@ h1, h2, h3 {
   display: grid;
   -ms-grid-columns: (4fr)[4];
   grid-template-columns: repeat(4, 4fr);
-  grid-gap: .3rem; }
+  grid-gap: 1rem; }
 
 .product {
   position: relative; }
@@ -1105,3 +1105,28 @@ html {
 
 body {
   font-family: 'Oswald', sans-serif; }
+
+.tabs {
+  margin-top: 4rem; }
+
+.tab__header {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap; }
+
+.tab__header .tab__header-title {
+  margin-right: 1.3rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-bottom: 2px solid transparent; }
+
+.tab__header .tab__header--active .tab__header-title,
+.tab__header > div:hover .tab__header-title {
+  color: #FF7F1A;
+  border-color: #FF7F1A; }
+
+.tab__content > [class*=tab__content-] {
+  display: none; }
+
+.tab__content > div.tab__content--active {
+  display: block; }

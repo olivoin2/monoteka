@@ -8,4 +8,11 @@ jQuery(document).ready(function($) {
 		dots: false
 	});
 
+	$('.product [data-size]').click(function() {
+		$(this).addClass('active');
+		$(this).siblings('.active').removeClass('active');
+	});
+
+	$('.tabs').multitabs();
+
 });
