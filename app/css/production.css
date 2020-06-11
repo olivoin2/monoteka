@@ -797,7 +797,8 @@ h1, h2, h3 {
       display: -webkit-box;
       display: flex;
       -webkit-box-align: center;
-      align-items: center; }
+      align-items: center;
+      padding-right: .5rem; }
       .product .content .props .to-cart .price {
         margin-right: 1rem;
         font-weight: bold;
